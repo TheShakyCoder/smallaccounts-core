@@ -1,1 +1,1 @@
-# SmallAccounts
+# SmallAccounts Accounting Package
