@@ -1,0 +1,18 @@
+{
+    "name": "smallaccounts/core",
+    "description": "Core accounting functionality for the SmallAccounts app",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Smallaccounts\\Core\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sharif Khan"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
