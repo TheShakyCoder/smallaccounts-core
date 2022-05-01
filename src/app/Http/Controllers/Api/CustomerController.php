@@ -1,12 +1,12 @@
 <?php
 
-namespace Smallaccounts\Core\Http\Controllers;
+namespace Smallaccounts\Core\App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Mail;
-use Smallaccounts\Core\Mail\CreateCustomerMailable;
-use Smallaccounts\Core\Models\Customer;
+use Smallaccounts\Core\App\Mail\CreateCustomerMailable;
+use Smallaccounts\Core\App\Models\Customer;
 
 class CustomerController extends Controller
 {

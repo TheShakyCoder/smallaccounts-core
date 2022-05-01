@@ -1,12 +1,12 @@
 <?php
 
-namespace Smallaccounts\Core\Mail;
+namespace Smallaccounts\Core\App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Smallaccounts\Core\Models\Customer;
+use Smallaccounts\Core\App\Models\Customer;
 
 class CreateCustomerMailable extends Mailable
 {
