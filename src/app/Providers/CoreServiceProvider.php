@@ -13,8 +13,11 @@ class CoreServiceProvider extends ServiceProvider
         );
         $this->publishes([
             __DIR__.'/../../config/smallaccounts.php' => config_path('smallaccounts.php'),
-        ]);
-        $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+        ], 'config');
+        $this->publishes([
+            __DIR__.'/../../database/migrations' => database_path('migrations'),
+        ], 'config');
+        // $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/../../routes/api.php');
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'smallaccounts');
     }
