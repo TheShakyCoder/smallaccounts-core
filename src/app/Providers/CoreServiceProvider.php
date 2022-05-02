@@ -16,7 +16,7 @@ class CoreServiceProvider extends ServiceProvider
         ], 'config');
         $this->publishes([
             __DIR__.'/../../database/migrations' => database_path('migrations'),
-        ], 'config');
+        ], 'migrations');
         // $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/../../routes/api.php');
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'smallaccounts');
